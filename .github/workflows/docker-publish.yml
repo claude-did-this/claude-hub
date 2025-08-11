@@ -41,7 +41,7 @@ jobs:
           sudo rm -rf coverage 2>/dev/null || true
 
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           clean: true
 
@@ -130,7 +130,7 @@ jobs:
           sudo rm -rf coverage 2>/dev/null || true
 
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           clean: true
 

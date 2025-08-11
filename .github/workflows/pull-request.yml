@@ -11,7 +11,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - uses: actions/setup-node@v4
       with:
         node-version: ${{ env.NODE_VERSION }}
@@ -36,7 +36,7 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - run: ./scripts/security/credential-audit.sh
     - uses: trufflesecurity/trufflehog@main
       with:
@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     if: contains(github.event.pull_request.changed_files, 'Dockerfile') || contains(github.event.pull_request.changed_files, 'src/')
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - uses: docker/build-push-action@v6
       with:
         context: .
