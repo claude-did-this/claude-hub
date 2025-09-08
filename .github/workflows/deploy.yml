@@ -191,7 +191,7 @@ jobs:
         run: rm -f .env.staging
       
       - name: Create deployment record
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             await github.rest.repos.createDeployment({
@@ -268,7 +268,7 @@ jobs:
         run: rm -f .env
       
       - name: Create deployment record
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const deployment = await github.rest.repos.createDeployment({
@@ -291,7 +291,7 @@ jobs:
             });
       
       - name: Create GitHub Release
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             await github.rest.repos.createRelease({
