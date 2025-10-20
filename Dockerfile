@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # Build stage - compile TypeScript and prepare production files
-FROM node:24-slim AS builder
+FROM node:25-slim AS builder
 
 WORKDIR /app
 
@@ -21,7 +21,7 @@ RUN npm run build
 COPY . .
 
 # Production dependency stage - smaller layer for dependencies
-FROM node:24-slim AS prod-deps
+FROM node:25-slim AS prod-deps
 
 WORKDIR /app
 
@@ -32,7 +32,7 @@ COPY package*.json ./
 RUN npm ci --omit=dev && npm cache clean --force
 
 # Test stage - includes dev dependencies and test files
-FROM node:24-slim AS test
+FROM node:25-slim AS test
 
 # Set shell with pipefail option
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -58,7 +58,7 @@ ENV NODE_ENV=test
 CMD ["npm", "run", "test:unit"]
 
 # Production stage - minimal runtime image
-FROM node:24-slim AS production
+FROM node:25-slim AS production
 
 # Set shell with pipefail option for better error handling
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
