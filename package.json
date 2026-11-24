@@ -2,6 +2,7 @@
   "name": "claude-github-webhook",
   "version": "0.1.1",
   "description": "A webhook endpoint for Claude to perform git and GitHub actions",
+  "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
