@@ -1,5 +1,8 @@
 # 🚀 Quick Start Guide
 
+> [!WARNING]
+> **This project is archived and no longer maintained.** This guide is kept for reference only and may no longer work. See the [README](./README.md#-project-status-archived) for known issues and the maintained alternative, the [Claude Code GitHub Action](https://github.com/anthropics/claude-code-action).
+
 Get Claude responding to your GitHub issues in minutes using Cloudflare Tunnel.
 
 ## Prerequisites
@@ -120,13 +123,6 @@ Test it in your own repository by creating an issue and mentioning your bot:
 - **Advanced Features**: Check `.env.example` for PR auto-review, auto-tagging, and more
 - **Multiple Repos**: Add the same webhook to any repo where you want bot assistance
 
-## Community & Support
-
-[![Discord](https://img.shields.io/discord/1377708770209304676?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/yb7hwQjTFg)
-[![Documentation](https://img.shields.io/badge/docs-claude--did--this.com-blue?logo=readthedocs&logoColor=white)](https://claude-did-this.com/claude-hub/overview)
-
-Join our Discord server for help, updates, and to share your experience!
-
 ## Troubleshooting
 
 **Bot not responding?**
@@ -138,4 +134,4 @@ Join our Discord server for help, updates, and to share your experience!
 - Re-run: `./scripts/setup/setup-claude-interactive.sh`
 - Ensure you have an active Claude.ai Max plan (5x or 20x)
 
-**Need help?** Ask in our [Discord server](https://discord.gg/yb7hwQjTFg) or check the [full documentation](https://claude-did-this.com/claude-hub/overview)!
+**Need help?** This project is archived and no longer supported. See the [README](./README.md#-project-status-archived) for known issues, or use the official [Claude Code GitHub Action](https://github.com/anthropics/claude-code-action) instead.

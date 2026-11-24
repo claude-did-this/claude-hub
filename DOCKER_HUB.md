@@ -1,5 +1,7 @@
 # Docker Hub Deployment Guide
 
+> **⚠️ Archived:** This project is no longer maintained and these images will not be updated. They may contain unpatched vulnerabilities. For a maintained alternative, see the [Claude Code GitHub Action](https://github.com/anthropics/claude-code-action).
+
 ## Quick Start
 
 Pull and run the Claude GitHub Webhook from Docker Hub:

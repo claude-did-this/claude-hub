@@ -1,5 +1,7 @@
 # Claude GitHub Webhook
 
+> **⚠️ Archived:** This project is no longer maintained and these images will not be updated. They may contain unpatched vulnerabilities. For a maintained alternative, see the [Claude Code GitHub Action](https://github.com/anthropics/claude-code-action).
+
 A webhook service that enables Claude AI to respond to GitHub mentions and execute commands within repository contexts.
 
 ## Quick Start
@@ -84,9 +86,9 @@ Mention your bot in any issue or PR comment:
 
 ## Links
 
-- [GitHub Repository](https://github.com/intelligence-assist/claude-hub)
-- [Documentation](https://github.com/intelligence-assist/claude-hub/tree/main/docs)
-- [Issue Tracker](https://github.com/intelligence-assist/claude-hub/issues)
+- [GitHub Repository](https://github.com/claude-did-this/claude-hub)
+- [Documentation](https://github.com/claude-did-this/claude-hub/tree/main/docs)
+- [Issue Tracker](https://github.com/claude-did-this/claude-hub/issues)
 
 ## License
 

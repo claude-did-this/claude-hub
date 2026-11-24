@@ -1,20 +1,28 @@
 # Claude GitHub Webhook
 
-[![Discord](https://img.shields.io/discord/1377708770209304676?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.com/widget?id=1377708770209304676&theme=dark)
-[![Main Pipeline](https://github.com/claude-did-this/claude-hub/actions/workflows/main.yml/badge.svg)](https://github.com/claude-did-this/claude-hub/actions/workflows/main.yml)
-[![Security Scans](https://github.com/claude-did-this/claude-hub/actions/workflows/security.yml/badge.svg)](https://github.com/claude-did-this/claude-hub/actions/workflows/security.yml)
-[![Jest Tests](https://img.shields.io/badge/tests-jest-green)](test/README.md)
-[![codecov](https://codecov.io/gh/claude-did-this/claude-hub/branch/main/graph/badge.svg)](https://codecov.io/gh/claude-did-this/claude-hub)
-[![Version](https://img.shields.io/github/v/release/claude-did-this/claude-hub?label=version)](https://github.com/claude-did-this/claude-hub/releases)
-[![Docker Hub](https://img.shields.io/docker/v/intelligenceassist/claude-hub?label=docker)](https://hub.docker.com/r/intelligenceassist/claude-hub)
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen)](package.json)
+[![Status: Archived](https://img.shields.io/badge/status-archived-lightgrey)](#-project-status-archived)
+[![Version](https://img.shields.io/github/v/release/claude-did-this/claude-hub?label=last%20release)](https://github.com/claude-did-this/claude-hub/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-🚀 **[Quick Start Guide](./QUICKSTART.md)** | 💬 **[Discord](https://discord.com/widget?id=1377708770209304676&theme=dark)** | 📚 **[Documentation](https://claude-did-this.com/claude-hub/overview)** | 📖 **[Complete Setup](./docs/complete-workflow.md)** | 🔐 **[Authentication](./docs/claude-authentication-guide.md)**
+## 📦 Project Status: Archived
+
+> [!WARNING]
+> **This project is no longer maintained** and the repository was archived in November 2026. The code remains available for reference and forking, but it receives no bug fixes, security patches, or dependency updates, and issues and pull requests are closed to new activity.
+>
+> **Looking for a maintained way to use Claude on GitHub?** Use Anthropic's official **[Claude Code GitHub Action](https://github.com/anthropics/claude-code-action)**. It covers the core use case of this project (mention Claude in issues and PRs to get code changes and reviews) without running your own webhook server.
+>
+> **If you run or fork this anyway, be aware of these known problems:**
+> - The Docker build fails because the pinned apt package versions are no longer in the Debian Bookworm mirrors ([#280](https://github.com/claude-did-this/claude-hub/issues/280)).
+> - `claudecode-entrypoint.sh` hardcodes `git checkout main`, which breaks repos whose default branch is `master` ([#281](https://github.com/claude-did-this/claude-hub/issues/281)).
+> - The service mounts the Docker socket and needs broad credentials. Review [#178](https://github.com/claude-did-this/claude-hub/issues/178) before you deploy it anywhere.
+> - Dependencies have not been updated since mid-2025. Run `npm audit` before you use it.
+> - The published Docker Hub images (`intelligenceassist/claude-hub`) are no longer updated.
+
+🚀 **[Quick Start Guide](./QUICKSTART.md)** | 📖 **[Complete Setup](./docs/complete-workflow.md)** | 🔐 **[Authentication](./docs/claude-authentication-guide.md)**
 
 ![Claude GitHub Webhook brain factory - AI brain connected to GitHub octocat via assembly line of Docker containers](./assets/brain_factory.png)
 
-Deploy Claude Code as a fully autonomous GitHub bot. Create your own bot account, mention it in any issue or PR, and watch AI-powered development happen end-to-end. Claude can implement complete features, review code, merge PRs, wait for CI builds, and run for hours autonomously until tasks are completed. Production-ready microservice with container isolation, automated workflows, and intelligent project management. 
+Deploy Claude Code as a fully autonomous GitHub bot. Create your own bot account, mention it in any issue or PR, and watch AI-powered development happen end-to-end. Claude can implement complete features, review code, merge PRs, wait for CI builds, and run for hours autonomously until tasks are completed. Microservice with container isolation, automated workflows, and intelligent project management. 
 
 ## What This Does
 
